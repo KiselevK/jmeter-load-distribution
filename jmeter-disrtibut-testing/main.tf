@@ -59,7 +59,7 @@ resource "aws_key_pair" "generated_key" {
 
 
 resource "aws_instance" "jmeter_server_instance" {
-  count                  = 1 #lookup(var.number_of_server_instances, var.test_type)
+  count                  = lookup(var.number_of_server_instances, var.test_type)
   instance_type          = lookup(var.client_ec2_size_base_on_test_type, var.test_type)
   key_name               = aws_key_pair.generated_key.key_name
   ami                    = data.aws_ami.get_latest_ubuntu22.image_id
