@@ -1,0 +1,11 @@
+NEED TO be done:
+- create instanse with grafana
+- create a s3 for state saving
+- create instanses for jmerer client
+-- Different regions
+- create telegraf colection data for jmeter instanses 
+- create jmeter server 
+- provide rps to grafana
+- possobility to run it 3 zone US, ASIA, EU
+- possobility to run from different regions for specific zone
+- 
